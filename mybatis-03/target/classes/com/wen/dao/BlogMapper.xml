@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wen.dao.BlogMapper">
+    <insert id="addBlog" parameterType="blog">
+        insert into mybatis01.blog (id, title, author, create_time, views)
+        VALUES (#{id},#{title},#{author},#{createTime},#{views})
+    </insert>
+</mapper>
